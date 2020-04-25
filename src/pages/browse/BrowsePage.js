@@ -46,7 +46,7 @@ class BrowsePage extends Component {
 				<PageHeader
 					titleLeader='Hello'
 					titleMain={user.userName}
-					titleAfter={'Watch any Youtube video in sync together with your friends!'}
+					titleAfter={'Select a Youtube video to watch in sync together with your friends!'}
 				/>
 
 				<div className="g-row">
