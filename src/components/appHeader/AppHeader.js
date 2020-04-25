@@ -35,7 +35,7 @@ export default class AppHeader extends Component {
 	renderSearchButton = ( bool ) => {
 		return bool ? (
 				<li>
-					<span className="btn btn-icon fa fa-search" onClick={this.props.toggleSearch}/>
+					<span className="search-text list-item" onClick={this.props.toggleSearch}>Search Videos</span><span className="btn btn-icon fa fa-search" onClick={this.props.toggleSearch}/>
 				</li>
 			) : null
 	}
@@ -54,14 +54,9 @@ export default class AppHeader extends Component {
 						</div>
 
 						<ul className="header-actions">
+							<li><a href="">About</a></li>
+							<li><a href="">Help</a></li>
 							{this.renderSearchButton ( user.userName )}
-							<li>
-								<a title="Open this project on Github"
-								   href="https://github.com/"
-								   target="_blank" rel="noopener noreferrer">
-									<span className="btn btn-icon fa fa-github"/>
-								</a>
-							</li>
 						</ul>
 
 					</div>
