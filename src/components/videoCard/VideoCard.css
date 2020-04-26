@@ -12,12 +12,16 @@
     transition: 0.2s ease;
 }
 
+.card-content:hover {
+    box-shadow: 0px 10px 15px rgba(44, 44, 44, 0.15);
+}
+
 .video-card .card-content {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .card-content > .main {
