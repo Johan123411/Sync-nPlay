@@ -18,11 +18,39 @@
     outline: none;
     border: 0;
     padding: 5px 15px;
-    margin: 14px 0 14px 30px;
-    width: 100%;
+    margin: 14px 0 14px 14px;
+    height: 100%;
+    color: #2c2c2c;
+    font-family: inherit;
+    background: #f0f0f0;
+    border: 2px solid #2c2c2c;
+    border-radius: 5px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.url-button {
+    flex: 0.15;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    padding: 5px 15px;
+    margin: 14px 0 14px 14px;
     height: 100%;
     color: #f0f0f0;
     font-family: inherit;
-    background: #373737;
+    background: #2c2c2c;
+    border: 2px solid #2c2c2c;
+    border-radius: 5px;
     -webkit-font-smoothing: antialiased;
+    transition: all 0.2s ease;
+}
+
+.url-button:hover {
+    background: #f0f0f0;
+    color: #2c2c2c;
+    box-shadow: 0px 10px 20px rgba(44,44,44,0.2);
+    transform: scale(1.05);
+    cursor: pointer;
 }

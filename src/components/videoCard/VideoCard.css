@@ -10,6 +10,9 @@
     padding-right: 0px;
     transform: scale(1.05);
     transition: 0.2s ease;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
 }
 
 .card-content:hover {
@@ -26,9 +29,9 @@
 }
 
 .card-content > .main {
-    border-left: 2px solid #2c2c2c;
-    border-right: 2px solid #2c2c2c;
-    border-bottom: 2px solid #2c2c2c;
+    border-left: 1.5px solid #b6b6b6;
+    border-right: 1.5px solid #b6b6b6;
+    border-bottom: 1.5px solid #b6b6b6;
 }
 
 .video-card .card-content .thumbnail {

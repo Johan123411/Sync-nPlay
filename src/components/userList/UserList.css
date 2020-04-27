@@ -1,21 +1,18 @@
 .users-in-party-list {
     flex: 1;
     margin: 0 0 0 10px;
-    max-height: 253px;
-    background: #1d1e1f;
+    max-height: 100%;
+    background: #f0f0f0;
     padding: 10px;
+    border: 2px solid #b6b6b6;
+    color: #b6b6b6;
 }
 
 .users-in-party-list .title {
     margin: 0 0 5px 0;
     font-size: 1.25rem;
     font-weight: 400;
-    border-bottom: 1px solid #424242;
-}
-
-.users-in-party-list .user {
-    padding-left: 10px;
-    width: 100%;
+    border-bottom: 1px solid #b6b6b6;
 }
 
 .users-in-party-list .user .user-name {

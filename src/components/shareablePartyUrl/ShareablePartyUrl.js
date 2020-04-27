@@ -26,6 +26,8 @@ export default class ShareablePartyUrl extends Component {
 					   value={partyUrl}
 					   onClick={this.handleFocus}
 				/>
+				<button className="url-button">Copy</button>
+				<button className="url-button">Share</button>
 			</div>
 		)
 	}
