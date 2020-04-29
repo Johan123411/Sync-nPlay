@@ -6,6 +6,9 @@ import PropTypes from 'prop-types'
 // CSS
 import './PartyPage.css'
 
+// Assets
+import error404 from '../../assets/404.svg'
+
 // Components
 import VideoPlayer from '../../components/videoPlayer/VideoPlayer'
 import ChatBox from '../../components/chatBox/ChatBox'
@@ -113,8 +116,7 @@ class PartyPage extends Component {
 									handleMaximizeBtnPressed={handleMaximizeBtnPressed}
 								/>
 							</div>
-
-							<UserList users={usersInParty}/>
+							{/* <UserList users={usersInParty}/> */}
 						</div>
 
 						<ChatBox
@@ -140,7 +142,8 @@ class PartyPage extends Component {
 				<h1 className="header">Whoops..</h1>
 				<span className="description">The requested party with id <b>"{this.partyId}"</b>
 					does not seem to exist (anymore).. sorry! Could you check if you entered the right party-url?</span>
-				<div className="back-btn" onClick={() => this.props.router.push ( '/' )}>Return</div>
+				<img src={error404} className="error-img" alt="Error 404 Image"/>
+				<div className="back-btn" onClick={() => this.props.router.push ( '/' )}>Home</div>
 			</div>
 		)
 	}

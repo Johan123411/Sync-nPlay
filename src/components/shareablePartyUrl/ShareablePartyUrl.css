@@ -19,17 +19,16 @@
     border: 0;
     padding: 5px 15px;
     margin: 14px 0 14px 14px;
-    height: 100%;
-    color: #2c2c2c;
+    height: 80%;
+    color: #284b63;
     font-family: inherit;
     background: #f0f0f0;
-    border: 2px solid #2c2c2c;
-    border-radius: 5px;
+    border-bottom: 1.5px solid #284b63;
     -webkit-font-smoothing: antialiased;
 }
 
 .url-button {
-    flex: 0.15;
+    flex: 0.20;
     display: block;
     font-size: 1.25rem;
     font-weight: 300;
@@ -40,8 +39,27 @@
     height: 100%;
     color: #f0f0f0;
     font-family: inherit;
-    background: #2c2c2c;
-    border: 2px solid #2c2c2c;
+    background: #284b63;
+    border: 2px solid #284b63;
+    border-radius: 5px;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.2s ease;
+}
+
+.url-button-secondary {
+    flex: 0.20;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    padding: 5px 15px;
+    margin: 14px 0 14px 14px;
+    height: 100%;
+    color: #284b63;
+    font-family: inherit;
+    background: #f0f0f0;
+    border: 2px solid #284b63;
     border-radius: 5px;
     -webkit-font-smoothing: antialiased;
     transition: all 0.2s ease;
@@ -49,8 +67,20 @@
 
 .url-button:hover {
     background: #f0f0f0;
-    color: #2c2c2c;
+    color: #284b63;
     box-shadow: 0px 10px 20px rgba(44,44,44,0.2);
     transform: scale(1.05);
     cursor: pointer;
+}
+
+.url-button-secondary:hover {
+    background: #284b63;
+    color: #f0f0f0;
+    box-shadow: 0px 10px 20px rgba(44,44,44,0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.icon-btn {
+    margin-right: 8px;
 }

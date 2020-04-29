@@ -31,7 +31,7 @@ export default class VideoCard extends Component {
 					<div className="thumbnail">
 						<img src={videoDetails.thumbnailSrc} alt="Video thumbnail"/>
 						<div className="video-description">
-							<Truncate lines={4} ellipsis='...'>
+							<Truncate lines={6} ellipsis='...'>
 								{videoDetails.description}
 							</Truncate>
 						</div>

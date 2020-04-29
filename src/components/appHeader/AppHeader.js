@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 // Assets
-import logo from '../../assets/logo_white.svg'
+import logo from '../../assets/logo-blue.svg'
 
 // CSS
 import './AppHeader.css'
@@ -35,28 +35,29 @@ export default class AppHeader extends Component {
 	renderSearchButton = ( bool ) => {
 		return bool ? (
 				<li>
-					<span className="search-text list-item" onClick={this.props.toggleSearch}>Search Videos</span><span className="btn btn-icon fa fa-search" onClick={this.props.toggleSearch}/>
+					<span className="btn btn-icon fa fa-search" onClick={this.props.toggleSearch}/><span className="search-text list-item" onClick={this.props.toggleSearch}>search</span>
 				</li>
 			) : null
 	}
-
+	
 	render () {
 		const { search, handleSearch, user } = this.props
 
 		return (
 			<div className="app-header">
 				<div className="g-row">
-					<div className="g-col">
+					<div className="g-col" style={{paddingLeft: 0}}>
 
 						<div className="header-title-wrapper" onClick={this.navigateToHomePage}>
-							{/* <img src={logo} className="content logo" alt="bramgiessen.com logo"/> */}
-							<span className="content">Sync n' Play</span>
+							<img src={logo} className="content logo" alt="bramgiessen.com logo"/>
 						</div>
 
 						<ul className="header-actions">
-							<li><a href="">About</a></li>
-							<li><a href="">Help</a></li>
 							{this.renderSearchButton ( user.userName )}
+							<li><a href="#">home</a></li>
+							<li><a href="">about</a></li>
+							<li><a href="">help</a></li>
+							
 						</ul>
 
 					</div>

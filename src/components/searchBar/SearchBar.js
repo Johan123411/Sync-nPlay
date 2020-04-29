@@ -29,6 +29,23 @@ export default class SearchBar extends Component {
 		this.props.handleSearch ( inputValue )
 	}
 
+	constructor() {
+		super();
+		this.state = {
+			input: ""
+		};
+	}
+
+	cancelSearch = () => {
+		this.setState ({
+			input: ""
+		});
+	}
+
+	handleInput = (e) => {
+		this.setState({input: e.target.value});
+	}
+
 	render () {
 		const cssClasses = classNames ( 'search-bar', {
 			'open': this.props.search.expanded
@@ -42,12 +59,19 @@ export default class SearchBar extends Component {
 						ref={e => this.input = e}
 						autoComplete="off"
 						className="input"
-						maxLength="60"
-						placeholder="Search Videos / Movies"
+						id="myInput"
+						maxLength="70"
+						placeholder="search movies"
 						tabIndex="0"
 						type="text"
+						value={this.state.input}
+						onChange={this.handleInput}
 					/>
+					
 				</form>
+				<span className="fa fa-2x fa-times cross-icon" type="button" name="clear" value="cancel" onClick={this.cancelSearch}/>
+				
+				
 
 			</div>
 		)

@@ -47,7 +47,7 @@ class SearchPage extends Component {
 		return (
 			<div className="browse-page">
 				<PageHeader
-					titleLeader='Search results'
+					titleLeader='showing results for'
 					titleMain={currentQuery}
 				/>
 
@@ -57,6 +57,9 @@ class SearchPage extends Component {
 						youtubeVideos={this.props.youtubeVideos}
 						handleVideoSelection={handleVideoSelection}
 					/>
+				</div>
+				<div>
+					<span className="last-text">no more videos to display</span>
 				</div>
 			</div>
 		)

@@ -36,7 +36,7 @@ export default class ChatBox extends Component {
 					return (
 						<div className="message-wrapper" key={index}>
 							<div className={cssClasses}>
-								<span className="username">{message.userName}: </span>
+								<span className="username" style={{fontWeight: "bold"}}>{message.userName}: </span>
 								<span className="body">{message.message}</span>
 							</div>
 						</div>
@@ -72,7 +72,6 @@ export default class ChatBox extends Component {
 						ref={e => this.messageInput = e}
 						className="input"
 						placeholder="Say hello!"/>
-
 					<input
 						className="submit"
 						type="submit"

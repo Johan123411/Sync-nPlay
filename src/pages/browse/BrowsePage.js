@@ -46,7 +46,7 @@ class BrowsePage extends Component {
 				<PageHeader
 					titleLeader='Hello'
 					titleMain={user.userName}
-					titleAfter={'Select a Youtube video to watch in sync together with your friends!'}
+					titleAfter={'Select a video that you want to watch.'}
 				/>
 
 				<div className="g-row">
@@ -64,6 +64,9 @@ class BrowsePage extends Component {
 						youtubeVideos={youtubeVideos}
 						handleVideoSelection={handleVideoSelection}
 					/>
+				</div>
+				<div>
+					<span className="last-text">no more videos to display</span>
 				</div>
 			</div>
 		)

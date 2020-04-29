@@ -23,7 +23,7 @@ export default class UserList extends Component {
 
 		return (
 			<div className="users-in-party-list">
-				<h2 className="title">Users in party</h2>
+				<h2 className="title">users in room</h2>
 				{usersInList}
 			</div>
 		)
