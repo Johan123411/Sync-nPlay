@@ -13,7 +13,6 @@ import error404 from '../../assets/404.svg'
 import VideoPlayer from '../../components/videoPlayer/VideoPlayer'
 import ChatBox from '../../components/chatBox/ChatBox'
 import ShareablePartyUrl from '../../components/shareablePartyUrl/ShareablePartyUrl'
-import UserList from '../../components/userList/UserList'
 
 // Actions
 import { partyActions } from '../../core/party'
@@ -76,7 +75,6 @@ class PartyPage extends Component {
 			videoPlayerIsLoaded,
 			videoPlayerIsMuted,
 			videoPlayerIsMaximized,
-			usersInParty,
 			emitNewPlayerStateForPartyToServer,
 			onPlayerStateChange,
 			partyVideoPlayerState,
@@ -116,7 +114,6 @@ class PartyPage extends Component {
 									handleMaximizeBtnPressed={handleMaximizeBtnPressed}
 								/>
 							</div>
-							{/* <UserList users={usersInParty}/> */}
 						</div>
 
 						<ChatBox
@@ -139,9 +136,9 @@ class PartyPage extends Component {
 	renderPartyNotFoundMessage = () => {
 		return (
 			<div className="party-not-found-container">
-				<h1 className="header">Whoops..</h1>
+				<h1 className="header">Oops! Something went wrong.</h1>
 				<span className="description">The requested party with id <b>"{this.partyId}"</b>
-					does not seem to exist (anymore).. sorry! Could you check if you entered the right party-url?</span>
+					does not exist. Please check the URL.</span>
 				<img src={error404} className="error-img" alt="Error 404 Image"/>
 				<div className="back-btn" onClick={() => this.props.router.push ( '/' )}>Home</div>
 			</div>

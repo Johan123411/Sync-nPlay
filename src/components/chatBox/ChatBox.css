@@ -5,9 +5,9 @@
     background: #f0f0f0;
     display: flex;
     flex-direction: column;
-    border-left: 2px solid #284b63;
-    border-right: 2px solid #284b63;
-    border-bottom: 2px solid #284b63;
+    border-left: 1.25px solid #284b63;
+    border-right: 1.25px solid #284b63;
+    border-bottom: 1.25px solid #284b63;
 }
 
 .chat-box .message-box{
@@ -58,8 +58,8 @@
     align-self: flex-end;
     display: flex;
     flex-direction: row;
-    border-top:2px solid #6b717e;
-    box-shadow: 0 -10px 15px 0 rgba(107,113,126,0.1);
+    border-top: 1.25px solid #6b717e;
+    /* box-shadow: 0 -10px 15px 0 rgba(107,113,126,0.1); */
 }
 
 .chat-box .input-box .input{
@@ -87,14 +87,11 @@
     /* margin: 3px; */
     -webkit-appearance: none;
     border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
     transition: all 0.2s ease;
     border: 2px solid #284b63;
 }
-
-/* .icon {
-    padding-left: -10px;
-    padding-top: -5px;
-} */
 
 .chat-box .input-box .submit:hover{
     cursor: pointer;

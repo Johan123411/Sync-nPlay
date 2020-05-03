@@ -54,9 +54,9 @@ export default class AppHeader extends Component {
 
 						<ul className="header-actions">
 							{this.renderSearchButton ( user.userName )}
-							<li><a href="#">home</a></li>
-							<li><a href="">about</a></li>
-							<li><a href="">help</a></li>
+							<li><a href="" onClick={this.navigateToHomePage}>home</a></li>
+							<li><a href="/about">about</a></li>
+							<li><a href="/help">help</a></li>
 							
 						</ul>
 

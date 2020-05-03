@@ -21,6 +21,7 @@
 
 .party-not-found-container .description{
     display: inline-block;
+    font-size: 1rem;
 }
 
 .party-not-found-container .back-btn{

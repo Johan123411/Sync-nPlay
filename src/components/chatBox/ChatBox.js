@@ -75,7 +75,7 @@ export default class ChatBox extends Component {
 					<input
 						className="submit"
 						type="submit"
-						value="Send"/>
+						value="send"/>
 				</form>
 
 			</div>

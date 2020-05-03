@@ -17,26 +17,29 @@
     font-weight: 300;
     outline: none;
     border: 0;
-    padding: 5px 15px;
+    height: 40px;
+    max-height: 40px;
+    padding: 0px 15px;
     margin: 14px 0 14px 14px;
-    height: 80%;
     color: #284b63;
     font-family: inherit;
     background: #f0f0f0;
-    border-bottom: 1.5px solid #284b63;
+    border-bottom: 1.25px solid #284b63;
     -webkit-font-smoothing: antialiased;
 }
 
 .url-button {
-    flex: 0.20;
+    flex: 0.25;
     display: block;
-    font-size: 1.25rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
     outline: none;
     border: 0;
-    padding: 5px 15px;
+    padding: 5px 15px 8px;
     margin: 14px 0 14px 14px;
-    height: 100%;
+    height: 40px;
+    max-height: 40px;
     color: #f0f0f0;
     font-family: inherit;
     background: #284b63;
@@ -47,15 +50,17 @@
 }
 
 .url-button-secondary {
-    flex: 0.20;
+    flex: 0.25;
     display: block;
-    font-size: 1.25rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
     outline: none;
     border: 0;
-    padding: 5px 15px;
+    padding: 5px 15px 8px;
     margin: 14px 0 14px 14px;
-    height: 100%;
+    height: 40px;
+    max-height: 40px;
     color: #284b63;
     font-family: inherit;
     background: #f0f0f0;
@@ -69,16 +74,41 @@
     background: #f0f0f0;
     color: #284b63;
     box-shadow: 0px 10px 20px rgba(44,44,44,0.2);
-    transform: scale(1.05);
     cursor: pointer;
 }
 
-.url-button-secondary:hover {
+.url-button-secondary:hover, .change-movie:hover {
     background: #284b63;
     color: #f0f0f0;
     box-shadow: 0px 10px 20px rgba(44,44,44,0.2);
-    transform: scale(1.05);
     cursor: pointer;
+}
+
+.change-movie {
+    flex: 0.45;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    outline: none;
+    border: 0;
+    width: auto;
+    padding: 5px 15px 8px;
+    margin: 14px 0 14px 14px;
+    height: 40px;
+    max-height: 40px;
+    color: #284b63;
+    font-family: inherit;
+    background: #f0f0f0;
+    border: 2px solid #284b63;
+    border-radius: 5px;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.2s ease;
+}
+
+
+.share-party-url a {
+    text-decoration: none;
 }
 
 .icon-btn {

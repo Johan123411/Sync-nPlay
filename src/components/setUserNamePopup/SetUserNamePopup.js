@@ -6,6 +6,9 @@ import classNames from 'classnames'
 // CSS
 import './SetUserNamePopup.css'
 
+// Assets
+import logo from '../../assets/logo-green.svg'
+
 export default class SetUserNamePopup extends Component {
 	static propTypes = {
 		isVisible: PropTypes.bool.isRequired,
@@ -23,7 +26,7 @@ export default class SetUserNamePopup extends Component {
 		return (
 			<div className={setUserNamePopupCssClasses}>
 				<div className="set-username-popup">
-					<span className="create-username-header">Welcome to Sync n' Play!</span>
+					<span className="create-username-header"><img src={logo} className="logo-name-page" alt="Sync n' Play"/></span>
 					<span className="create-username-name">Before we begin, please enter your name:</span>
 
 					<div className="username-details">
@@ -37,12 +40,14 @@ export default class SetUserNamePopup extends Component {
 							tabIndex="0"
 							type="text"
 						/>
+						<div className="create-username button" onClick={() => 
+							{
+								handleSetUserName ( this.input.value.trim () )
+							}}>continue
+						</div>
 					</div>
 
-					<div className="create-username button" onClick={() => {
-						handleSetUserName ( this.input.value.trim () )
-					}}>Continue
-					</div>
+					
 				</div>
 			</div>
 		)

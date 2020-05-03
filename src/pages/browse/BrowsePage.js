@@ -46,19 +46,10 @@ class BrowsePage extends Component {
 				<PageHeader
 					titleLeader='Hello'
 					titleMain={user.userName}
-					titleAfter={'Select a video that you want to watch.'}
+					titleAfter={'select a video that you want to watch'}
 				/>
 
 				<div className="g-row">
-					{/* <div className="introduction-text">
-						<p>3 easy steps to watch any Youtube video together with a friend:</p>
-						<ol>
-							<li>Search for & select any Youtube video</li>
-							<li>Share the custom generated party URL with your friends</li>
-							<li>Watch the video together in perfect sync!</li>
-						</ol>
-					</div> */}
-
 					<VideoList
 						showLoadingAnimation={isFetchingVideos}
 						youtubeVideos={youtubeVideos}

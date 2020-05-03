@@ -8,13 +8,13 @@ export const WEBSOCKET_URL = '/'
 //  YOUTUBE API
 //-------------------------------------
 // Siddhant
-// export const YOUTUBE_API_KEY = 'AIzaSyDq8IPWZPWmS66SZosHUSwKPzogoC1D_VI'
+export const YOUTUBE_API_KEY = 'AIzaSyDq8IPWZPWmS66SZosHUSwKPzogoC1D_VI'
 
 // Saish
 // export const YOUTUBE_API_KEY = 'AIzaSyARaYEyp3XbrqxXZqjTin8zWQ11_312HtE'
 
 // Maithili
-export const YOUTUBE_API_KEY = 'AIzaSyCER99T4lH8ZMpb7CP0l5ty3VE0kQGmtGI'
+// export const YOUTUBE_API_KEY = 'AIzaSyCER99T4lH8ZMpb7CP0l5ty3VE0kQGmtGI'
 
 
 
