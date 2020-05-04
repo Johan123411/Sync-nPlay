@@ -30,7 +30,7 @@ class AboutPage extends Component {
                             You can also find a chatbox where you and your friends can discuss what's going 
                             on in the movie. This group chat allows you to type up your thoughts without having 
                             to reach for another application. Which means that you and your friends can react 
-                            and chat in the real time while watching movie.
+                            and chat in real time while watching movie.
                         </p>
                     </div>
                     <div className="right-col">

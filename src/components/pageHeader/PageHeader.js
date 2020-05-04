@@ -29,8 +29,11 @@ export default class PageHeader extends Component {
 	}
 
 	render () {
-		const {titleMain, titleAfter} = this.props
+		const {titleLeader, titleMain, titleAfter} = this.props
 		var greeting = this.setGreet()
+		if (titleLeader === "showing results for") {
+			greeting = "showing results for";
+		}
 
 		return (
 			<div className="page-header">
