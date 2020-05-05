@@ -1,7 +1,7 @@
 ---
 title: Sync 'n Play
 authors: Siddhant Barua, Saishe Sankhe, Maithili Deshmukh 
-left-header: Human Computer Interraction 
+Subject: Human Computer Interraction 
 ---
 
 # Running the project locally 
