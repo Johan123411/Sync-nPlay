@@ -1,0 +1,52 @@
+.help-page .introduction-text {
+    margin-top: 30px;
+    line-height: 1.1;
+    font-size: 2rem;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.left-col {
+    flex: 0.60;
+}
+
+.help-page .content {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-col {
+    flex: 0.40;
+    text-align: justify;
+    font-size: 1.2em;
+    padding-left: 30px;
+}
+
+.img {
+    width: 100%;
+    float: left;
+}
+
+.thin-text {
+    font-weight: 300;
+}
+
+.help-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+/*==================================*/
+/* Media queries */
+/*----------------------------------*/
+
+@media screen and (max-width: 46.25em){
+    .content {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

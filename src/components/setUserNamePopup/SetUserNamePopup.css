@@ -1,0 +1,131 @@
+.set-username-popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    background: rgba(40, 75, 99, 0.97);
+    transition: opacity 0.5s ease;
+    transition-delay: 0.3s;
+}
+
+.set-username-popup-wrapper.hidden {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+}
+
+.set-username-popup {
+    position: relative;
+    width: 60%;
+    margin: 15vh auto;
+}
+
+.set-username-popup .create-username-header {
+    color: #C5D86D;
+    font-family: inherit;
+    font-size: 2.5vw;
+    font-weight: 400;
+    display: block;
+}
+
+.create-username-name {
+    color: #C5D86D;
+    margin: 5px 0px;
+    font-family: inherit;
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    display: block;
+}
+
+.set-username-popup  {
+    font-size: 1.2vw;
+    margin-top: 200px;
+}
+
+.set-username-popup .username-details {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.input {
+    width: 60%;
+    height: 2.5em;
+    background: #f0f0f0;
+    border: 3px solid #C5D86D;
+    padding: .2em .6em;
+    color: #284b63;
+    font-size: 1rem;
+    /* box-sizing: border-box; */
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.input::placeholder {
+    font-weight: 400;
+}
+
+.button {
+    /* float: left; */
+    opacity: 1;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #284b63;
+    background: #C5D86D;
+    margin: 5px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    transition: all 0.2s ease;
+    border: 2px solid #C5D86D;
+}
+
+.button:active {
+    background: transparent;
+    color: #C5D86D;
+}
+
+.create-username {
+    color: #284b63;
+    background: #C5D86D;
+}
+
+.set-username-popup .button.cancel-username {
+    margin-left: 5px;
+}
+
+.set-username-popup .button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.logo-name-page {
+    width: 400px;
+}
+
+/*==================================*/
+/* Media queries */
+/*----------------------------------*/
+
+@media screen and (max-width: 800px){
+    .set-username-popup .create-username-header
+    {
+        font-size: 20px;
+    }
+
+    .set-username-popup ,
+    .set-username-popup .input,
+    .set-username-popup .button
+    {
+        font-size: 15px;
+    }
+
+}

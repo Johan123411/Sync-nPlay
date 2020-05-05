@@ -1,0 +1,70 @@
+{
+  "name": "syncnplay",
+  "version": "1.0.0",
+  "description": "a shared movie viewer",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Siddhant Barua",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=7.x",
+    "npm": ">=3.x"
+  },
+  "scripts": {
+    "start": "concurrently -r \"npm run start:server\" \"npm run start:client\"",
+    "start:client": "react-scripts start",
+    "start:server": "nodemon --require reify ./server/main.js",
+    "start-prod": "npm run start-prod:server",
+    "start-prod:server": "cross-env-shell DEBUG=APP:MAIN NODE_ENV=production node --require reify ./server/main.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build",
+    "postinstall": "npm run build"
+  },
+  "proxy": {
+    "/socket.io": {
+      "target": "ws://localhost:3001",
+      "ws": true
+    }
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "classnames": "2.2.5",
+    "compression": "1.7.0",
+    "concurrently": "3.5.0",
+    "debug": "2.6.8",
+    "express": "4.15.3",
+    "font-awesome": "4.7.0",
+    "helmet": "3.8.1",
+    "lodash": "4.17.4",
+    "npm": "5.3.0",
+    "query-string": "5.0.0",
+    "react": "15.6.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "15.6.1",
+    "react-facebook": "^8.1.4",
+    "react-player": "^0.24.6",
+    "react-redux": "5.0.5",
+    "react-router": "3.0.5",
+    "react-scripts": "1.0.10",
+    "react-share": "^4.1.0",
+    "react-truncate": "2.1.5",
+    "redux": "3.7.2",
+    "redux-socket.io": "1.4.0",
+    "redux-thunk": "2.2.0",
+    "seamless-immutable": "7.1.2",
+    "socket.io": "2.0.3",
+    "socket.io-client": "2.0.3"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "nodemon": "1.11.0",
+    "reify": "0.4.4"
+  },
+  "main": "index.js"
+}

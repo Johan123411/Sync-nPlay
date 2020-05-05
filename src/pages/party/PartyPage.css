@@ -1,0 +1,111 @@
+.party-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.party-page .player-container {
+    width: 100%;
+    height: 420px;
+}
+
+.party-not-found-container {
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.party-not-found-container .header{
+    display: inline-block;
+}
+
+.party-not-found-container .description{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.party-not-found-container .back-btn{
+    opacity: 1;
+    display: table;
+    padding: 8px 15px;
+    color: #f0f0f0;
+    background: #284b63;
+    border: 2px solid #284b63;
+    border-radius: 5px;
+    margin: 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5vw;
+    letter-spacing: 0.1em;
+    transition: all 0.2s ease;
+}
+
+.party-not-found-container .back-btn:hover {
+    opacity: 1;
+    cursor: pointer;
+    background: #f0f0f0;
+    color: #284b63;
+}
+
+.change-movie {
+    flex: 1;
+    margin: 0 0 10px 10px;
+    width: 100%;
+    max-height: 40px;
+    background: #f0f0f0;
+    padding: 10px;
+    border: 2px solid #284b63;
+    color: #284b63;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 5px 15px;
+    color: #284b63;
+    background: #f0f0f0;
+    border: 2px solid #284b63;
+    border-radius: 5px;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.2s ease;
+}
+
+.error-img {
+    display: block;
+    width: 80%;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*==================================*/
+/* Media queries */
+/*----------------------------------*/
+
+@media screen and (max-width: 46.25em) {
+    .party-page .share-party-url .title,
+    .party-page .share-party-url input,
+    .party-page .users-in-party-list .title,
+    .party-page .users-in-party-list .user .user-name {
+        font-size: 0.75rem;
+    }
+
+    .party-page .share-party-url input {
+        margin: 5px 0 5px 10px;
+    }
+
+    .party-page .player-container {
+        width: 100%;
+    }
+
+    .party-page .users-in-party-list {
+        margin: 10px 0 0 0;
+    }
+
+    .party-not-found-container .header{
+        font-size: 1.3rem;
+    }
+
+    .party-not-found-container .description,
+    .party-not-found-container .back-btn {
+        font-size: 0.7rem;
+    }
+
+}

@@ -1,0 +1,52 @@
+.about-page .introduction-text {
+    margin-top: 30px;
+    line-height: 1.1;
+    font-size: 2rem;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.left-col {
+    flex: 0.60;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.about-page .content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-col {
+    flex: 0.40;
+    width: 100%;
+}
+
+.about-img {
+    width: 85%;
+    float: right;
+}
+
+.thin-text {
+    font-weight: 300;
+}
+
+.text-box {
+    border: 2px solid #285b63;
+    font-size: 1.2em;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+/*==================================*/
+/* Media queries */
+/*----------------------------------*/
+
+@media screen and (max-width: 46.25em){
+    .content {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
