@@ -1,6 +1,6 @@
 ---
 title: Sync 'n Play
-authors: Siddhant Barua, Saishe Sankhe, Maithili Deshmukh 
+authors: Siddhant Barua, Saish Sankhe, Maithili Deshmukh 
 Subject: Human Computer Interraction 
 ---
 
